@@ -59,6 +59,7 @@ class AnalogPlot:
       plt.ylim([np.min(list(analogData.ax)[0:500])-10, np.max(list(analogData.ax)[0:500])+10])
       
       plt.draw()
+      plt.pause(0.01)  #  avoid show figure crash
 
 # main() function
 def main():
